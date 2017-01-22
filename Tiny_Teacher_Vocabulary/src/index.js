@@ -1,19 +1,9 @@
-/* eslint-disable  func-names */
-/* eslint quote-props: ["error", "consistent"]*/
-/**
- * This sample demonstrates a simple skill built with the Amazon Alexa Skills
- * nodejs skill development kit.
- * This sample supports en-US lauguage.
- * The Intent Schema, Custom Slots and Sample Utterances for this skill, as well
- * as testing instructions are located at https://github.com/alexa/skill-sample-nodejs-trivia
- **/
-
 'use strict';
 
 const Alexa = require('alexa-sdk');
 const questions = require('./question');
 
-const GAME_NAME = 'Vocabulary'; // TODO Be sure to change this for your skill.
+const GAME_NAME = 'Vocabulary';
 const ANSWER_COUNT = 4; // The number of possible answers per trivia question.
 const GAME_LENGTH = 10;  // The number of questions per trivia game.
 const GAME_STATES = {
@@ -21,7 +11,7 @@ const GAME_STATES = {
     START: '_STARTMODE', // Entry point, start the game.
     HELP: '_HELPMODE', // The user is asking for help.
 };
-const APP_ID = undefined; // TODO replace with your app ID (OPTIONAL)
+const APP_ID = amzn1.ask.skill.915a7128-ff51-4d5c-a7d4-d50cba3c7e5e;
 
 function populateGameQuestions() {
     const gameQuestions = [];
